@@ -25,15 +25,14 @@ public:
         // Your code here
         unordered_map<int, vector<char>> mp;
 
-        mp[2] = {'a', 'b', 'c'};
-        mp[3] = {'d', 'e', 'f'};
-        mp[4] = {'g', 'h', 'i'};
-        mp[5] = {'j', 'k', 'l'};
-        mp[6] = {'m', 'n', 'o'};
-        mp[7] = {'p', 'q', 'r', 's'};
-        mp[8] = {'t', 'u', 'v'};
-        mp[9] = {'w', 'x', 'y', 'z'};
-
+        mp.insert({2, {'a', 'b', 'c'}});
+        mp.insert({3, {'d', 'e', 'f'}});
+        mp.insert({4, {'g', 'h', 'i'}});
+        mp.insert({5, {'j', 'k', 'l'}});
+        mp.insert({6, {'m', 'n', 'o'}});
+        mp.insert({7, {'p', 'q', 'r', 's'}});
+        mp.insert({8, {'t', 'u', 'v'}});
+        mp.insert({9, {'w', 'x', 'y', 'z'}});
         vector<string> res;
         int index = 0;
         generate(mp, a, N, index, temp, res);
