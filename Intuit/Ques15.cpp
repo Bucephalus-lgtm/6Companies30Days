@@ -1,8 +1,9 @@
+// https://leetcode.com/problems/koko-eating-bananas
+
 class Solution {
 public:
     int minEatingSpeed(vector<int>& piles, int H) {
         int l = 1, r = 1e9, k = 0;
-
         while (l <= r) {
             k = (l + r) / 2;
             int h = 0;
