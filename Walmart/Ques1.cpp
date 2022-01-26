@@ -26,7 +26,7 @@ public:
                 for(auto &to: g[node]) {
                     if (mx[to.first] < to.second*temp) {
                         mx[to.first] = to.second*temp;
-						q.push({mx[to.first], to.first});
+			q.push({mx[to.first], to.first});
                     }
                 }
             }
