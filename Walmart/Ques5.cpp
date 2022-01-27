@@ -1,4 +1,4 @@
-// https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/
+// https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1
 
 class Solution {
   public:

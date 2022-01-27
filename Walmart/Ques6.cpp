@@ -1,21 +1,21 @@
 https://practice.geeksforgeeks.org/problems/power-of-numbers-1587115620/1
 
-class Solution {
-  public:
-  int solve(Node* root){
-      if(!root) return 0;
-      int left = solve(root->left);
-      int right = solve(root->right);
-      int res = root->data + left + right;
-      root->data = left + right;
-      return res;
-  }
-  
-    // Convert a given tree to a tree where every node contains sum of values of
-    // nodes in left and right subtrees in the original tree
-    void toSumTree(Node *node)
-    {
-        // Your code here
-        solve(node);
+
+class Solution{
+    long long MOD = 1e9 + 7;
+    public:
+    //You need to complete this fucntion
+    long long solve(int N, int R){
+        if(R == 0) return 1;
+        long long temp = power(N, R/2);
+        temp = (temp*temp)%MOD;
+        if(R%2) return temp*N;
+        else return temp;
     }
+    long long power(int N, int R)
+    {
+       //Your code here
+        return solve(N, R) % MOD;
+    }
+
 };
